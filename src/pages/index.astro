@@ -60,107 +60,103 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">🌟​ - Mes skills</h3>
-        
+        <p class="text-lg text-neutral-100">🌟​ - Mes skills</p>
       </header>
       
       {posts.length === 0 && <p></p>}
 
       <section class="flex flex-col gap-8 md:flex-row md:flex-wrap">
         <section class="grid grid-cols-2 gap-8 md:flex md:flex-wrap">
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/react.svg" alt="react Logo" class="w-8 h-8">
             </div>
           </a>
 
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/nextjs.svg" alt="next.js Logo" class="w-8 h-8">
             </div>
           </a>
           
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/javascript.svg" alt="Javascript Logo" class="w-8 h-8">
             </div>
           </a>
         
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/typescript.svg" alt="typescript Logo" class="w-8 h-8">
             </div>
           </a>
 
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/tailwindcss.svg" alt="tailwind Logo" class="w-8 h-8">
             </div>
           </a>
         
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/sass.svg" alt="sass Logo" class="w-8 h-8">
             </div>
           </a>
 
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/expo.svg" alt="expo Logo" class="w-8 h-8">
             </div>
           </a>
         
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/nodejs.svg" alt="nodejs Logo" class="w-8 h-8">
             </div>
           </a>
           
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/golang.svg" alt="golang Logo" class="w-8 h-8">
             </div>
           </a>
 
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/docker.svg" alt="docker Logo" class="w-8 h-8">
             </div>
         
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/python.svg" alt="python Logo" class="w-8 h-8">
             </div>
           </a>
         
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/mysql.svg" alt="mysql Logo" class="w-8 h-8">
             </div>
           </a>
-        
           
-        
-          
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/graphql.svg" alt="graphql Logo" class="w-8 h-8">
             </div>
           </a>
 
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/photoshop.svg" alt="photoshop Logo" class="w-8 h-8">
             </div>
           </a>
         
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/adobe.svg" alt="adobe Logo" class="w-8 h-8">
             </div>
           </a>
         
-          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+          <a class="group flex max-w-sm  flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
               <img src="/figma.svg" alt="figma Logo" class="w-8 h-8">
             </div>
@@ -177,9 +173,9 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     <article class="flex flex-col gap-8">
       
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">
+        <p class="text-lg text-neutral-100">
           💻 - Projets sélectionnés ({projects.length})
-        </h3>
+        </p>
         <Link href="/projets" label="Voir plus" isUnderline target="_self" />
       </header>
       {projects.length === 0 && <p></p>}
