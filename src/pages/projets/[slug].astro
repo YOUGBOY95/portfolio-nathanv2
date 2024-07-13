@@ -1,5 +1,5 @@
 ---
-import { CollectionEntry, getCollection } from "astro:content";
+import {  getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import formatDate from "@/utils/formatDate";
 
@@ -12,9 +12,7 @@ export async function getStaticPaths() {
   }));
 }
 
-type Props = {
-  post: CollectionEntry<"posts">;
-};
+
 
 const { post } = Astro.props;
 const { Content } = await post.render();

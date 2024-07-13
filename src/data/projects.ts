@@ -6,27 +6,37 @@ export type Project = {
 };
 
 const projects: Project[] = [
+
   {
-    title: "Puppetfactory",
-    techs: ["Next.js", "TypeScript"],
-    link: "https://puppetfactory.app/",
-  },
-  {
-    title: "Script to generate Next.js project",
-    techs: ["Shell"],
-    link: "https://github.com/MaeWolff/create-nextjs-app-bash-script",
-  },
-  {
-    title: "Dictionary App",
-    techs: ["Next.js", "react-query", "zod"],
-    link: "https://github.com/MaeWolff/dictionary-app",
-  },
-  {
-    title: "Portfolio / Template",
-    techs: ["Astro", "TypeScript"],
-    link: "https://github.com/MaeWolff/astro-portfolio-template",
+    title: "🤖 | BUMBLE-B",
+    techs: ["React native", "Typescript", "Expo", "Java", "C++", "Docker"],
+    link: "https://github.com/N95Ryan/Bumble-B",
     isComingSoon: true,
   },
+  
+  {
+    title: "🎮 | ULG",
+    techs: ["React.js", "Typescript","Scss","Docker"],
+    link: "https://www.urbanleaguegame.com/",
+  },
+
+  {
+    title: "🌐​ | MON PORTFOLIO V1",
+    techs: ["React.js", "Typescript","Scss"],
+    link: "https://portfolio-nathan-bfgy1pz0e-yougboy95s-projects.vercel.app/",
+  },
+
+  {
+    title: "🪀 | SALINE ROYALE ACADEMY",
+    techs: ["React.js", "Javascript","Scss", "Java","Docker"],
+    link: "https://saline-royal.vercel.app/",
+  },
+  {
+    title: "✨ | SECRET-TIME",
+    techs: ["React.js", "Javascript", "Tailwind.css"],
+    link: "https://secret-time.vercel.app/",
+  },
+  
 ];
 
 export default projects;

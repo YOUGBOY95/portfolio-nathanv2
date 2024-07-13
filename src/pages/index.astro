@@ -4,7 +4,6 @@ import { Image } from "astro:assets"
 
 import Layout from "@/layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
-import PostCard from "@/components/PostCard.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import Link from "@/components/shared/Link.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
@@ -26,7 +25,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         presentation.profile && (
           <Image
             src={presentation.profile}
-            class="w-1/4 self-center rounded-full"
+            class="w-1/4 self-center"
             alt="Your Profile"
             width="200"
             height="200"
@@ -38,49 +37,154 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         <h1 class="text-3xl text-neutral-100">
           {presentation.title}
         </h1>
-
-        <h2
-          class="w-auto max-w-[60ch] leading-6"
-          set:html={convertAsteriskToStrongTag(presentation.description)}
-        />
-
+        <p>
+          <span>
+            Je suis un <span class="text-orange-500">développeur frontend français</span> âgé de <span class="text-orange-500">22 ans</span> basé en <span class="text-orange-500">région parisienne</span>.
+          </span>
+          <span class="block my-2">
+            J'ai actuellement plus de <span class="text-orange-500">2 ans</span> d'expérience dans la création d'applications web.
+          </span>
+          <span class="block my-2">
+            Actuellement, je me spécialise dans l'utilisation de 
+            <span class="inline-flex w-fit items-center gap-2 rounded-md border border-neutral-800 bg-neutral-900 px-2 py-1 text-xs">
+              <img src="/react.svg" alt="React Logo" class="w-4 h-4" />
+              React.js
+           </span> et <span class="inline-flex w-fit items-center gap-2 rounded-md border border-neutral-800 bg-neutral-900 px-2 py-1 text-xs">
+            <img src="/typescript.svg" alt="React Logo" class="w-4 h-4" />
+            Typescript .
+          </span>
+        </p>
         <SocialLinks />
       </div>
     </article>
-
+    
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Latest posts</h3>
-        <Link href="/posts" label="See all posts" isUnderline target="_self" />
+        <h3 class="text-lg text-neutral-100">🌟​ - Mes skills</h3>
+        
       </header>
-      {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
+      
+      {posts.length === 0 && <p></p>}
 
-      <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
-        {
-          posts.length !== 0 &&
-            posts
-              .slice(0, 2)
-              .map((post) => (
-                <PostCard
-                  publishedAt={post.data.publishedAt}
-                  title={post.data.title}
-                  description={post.data.description}
-                  slug={post.slug}
-                />
-              ))
-        }
+      <section class="flex flex-col gap-8 md:flex-row md:flex-wrap">
+        <section class="grid grid-cols-2 gap-8 md:flex md:flex-wrap">
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/react.svg" alt="react Logo" class="w-8 h-8">
+            </div>
+          </a>
+
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/nextjs.svg" alt="next.js Logo" class="w-8 h-8">
+            </div>
+          </a>
+          
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/javascript.svg" alt="Javascript Logo" class="w-8 h-8">
+            </div>
+          </a>
+        
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/typescript.svg" alt="typescript Logo" class="w-8 h-8">
+            </div>
+          </a>
+
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/tailwindcss.svg" alt="tailwind Logo" class="w-8 h-8">
+            </div>
+          </a>
+        
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/sass.svg" alt="sass Logo" class="w-8 h-8">
+            </div>
+          </a>
+
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/expo.svg" alt="expo Logo" class="w-8 h-8">
+            </div>
+          </a>
+        
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/nodejs.svg" alt="nodejs Logo" class="w-8 h-8">
+            </div>
+          </a>
+          
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/golang.svg" alt="golang Logo" class="w-8 h-8">
+            </div>
+          </a>
+
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/docker.svg" alt="docker Logo" class="w-8 h-8">
+            </div>
+        
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/python.svg" alt="python Logo" class="w-8 h-8">
+            </div>
+          </a>
+        
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/mysql.svg" alt="mysql Logo" class="w-8 h-8">
+            </div>
+          </a>
+        
+          
+        
+          
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/graphql.svg" alt="graphql Logo" class="w-8 h-8">
+            </div>
+          </a>
+
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/photoshop.svg" alt="photoshop Logo" class="w-8 h-8">
+            </div>
+          </a>
+        
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/adobe.svg" alt="adobe Logo" class="w-8 h-8">
+            </div>
+          </a>
+        
+          <a class="group flex max-w-sm cursor-pointer flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
+            <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
+              <img src="/figma.svg" alt="figma Logo" class="w-8 h-8">
+            </div>
+          </a>
+        
+          
+        
+          
+        
+        </section>
       </section>
     </article>
 
     <article class="flex flex-col gap-8">
+      
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">
-          Selected projects ({projects.length})
+          💻 - Projets sélectionnés ({projects.length})
         </h3>
+        <Link href="/projets" label="Voir plus" isUnderline target="_self" />
       </header>
-      {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
+      {projects.length === 0 && <p></p>}
 
-      <section class="flex flex-col gap-4">
+      <section class="flex flex-col gap-6">
         {
           projects.length !== 0 &&
             projects.map((project) => <ProjectCard {...project} />)
@@ -90,16 +194,17 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Get in touch</h3>
+        <h3 class="text-lg text-neutral-100">📩 - Prendre contact</h3>
       </header>
       <p>
-        Email me at <Link
+        Envoyez-moi un email à l'adresse suivante<Link
           href={`mailto:${presentation.mail}`}
           label={presentation.mail}
-        /> or follow me via my social links.
+        /> ou suivez-moi via mes réseaux sociaux.
       </p>
 
       <SocialLinks />
     </article>
   </main>
+  <p>©2024 Copyright : Nathan PINARD</p>
 </Layout>

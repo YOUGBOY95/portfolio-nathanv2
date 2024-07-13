@@ -15,7 +15,7 @@ const theme: Theme = {
     primary: "orange",
     blur: {
       top: "orange",
-      bottom: "violet",
+      bottom: "orange",
     },
   },
 };

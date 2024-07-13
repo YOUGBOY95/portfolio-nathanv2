@@ -9,10 +9,12 @@ import presentation from "@/data/presentation";
       <>
         <li>
           <Link href={social.link} label={social.label} />
+           
         </li>
 
         {presentation.socials.length - 1 !== index && <li>/</li>}
       </>
+      
     ))
   }
 </ul>
