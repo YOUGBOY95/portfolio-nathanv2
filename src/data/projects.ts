@@ -16,25 +16,25 @@ const projects: Project[] = [
   
   {
     title: "🎮 | ULG",
-    techs: ["React.js", "Typescript","Scss","Docker"],
+    techs: ["React.js", "Typescript","Sass","Docker"],
     link: "https://www.urbanleaguegame.com/",
   },
 
   {
     title: "🍚 | POKEDEX",
-    techs: ["React.js", "Typescript","Scss","Firebase"],
+    techs: ["React.js", "Typescript","Sass","Firebase"],
     link: "https://pokedex-react-gamma-ebon.vercel.app/",
   },
 
   {
     title: "🌐​ | MON PORTFOLIO V1",
-    techs: ["React.js", "Typescript","Scss"],
+    techs: ["React.js", "Typescript","Sass"],
     link: "https://portfolio-nathan-bfgy1pz0e-yougboy95s-projects.vercel.app/",
   },
 
   {
     title: "🪀 | SALINE ROYALE ACADEMY",
-    techs: ["React.js", "Javascript","Scss", "Java","Docker"],
+    techs: ["React.js", "Javascript","Sass", "Java","Docker"],
     link: "https://saline-royal.vercel.app/",
   },
   
