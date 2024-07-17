@@ -21,6 +21,12 @@ const projects: Project[] = [
   },
 
   {
+    title: "🍚 | POKEDEX",
+    techs: ["React.js", "Typescript","Scss","Firebase"],
+    link: "https://pokedex-react-gamma-ebon.vercel.app/",
+  },
+
+  {
     title: "🌐​ | MON PORTFOLIO V1",
     techs: ["React.js", "Typescript","Scss"],
     link: "https://portfolio-nathan-bfgy1pz0e-yougboy95s-projects.vercel.app/",
@@ -30,11 +36,6 @@ const projects: Project[] = [
     title: "🪀 | SALINE ROYALE ACADEMY",
     techs: ["React.js", "Javascript","Scss", "Java","Docker"],
     link: "https://saline-royal.vercel.app/",
-  },
-  {
-    title: "✨ | SECRET-TIME",
-    techs: ["React.js", "Javascript", "Tailwind.css"],
-    link: "https://secret-time.vercel.app/",
   },
   
 ];
