@@ -9,9 +9,9 @@ const projects: Project[] = [
 
   {
     title: "🤖 | BUMBLE-B",
-    techs: ["React native", "Typescript", "Expo", "Java", "C++", "Docker"],
+    techs: ["React native", "Typescript", "Expo", "Axios", "Javascript","Java", "C++", "Docker"],
     link: "https://github.com/N95Ryan/Bumble-B",
-    isComingSoon: true,
+    //isComingSoon: true,
   },
   
   {
