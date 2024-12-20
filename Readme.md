@@ -19,7 +19,7 @@ Bienvenue dans mon portfolio personnel ! Ce site est conçu pour présenter me
 ## 📬 Me contacter
 
 Vous souhaitez collaborer ou avez une question ? Contactez-moi par e-mail à :  
-**[votre-email@example.com](mailto:nathan.pinard95@gmail.com)**  
+**[nathan.pinard95@gmail.com](mailto:nathan.pinard95@gmail.com)**  
 
 ---
 
