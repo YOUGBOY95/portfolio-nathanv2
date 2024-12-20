@@ -8,6 +8,10 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-open-sans)", ...defaultTheme.fontFamily.sans],
       },
+      backgroundColor: {
+        default: "#ffffff", // Définit une couleur blanche
+      },
     },
   },
+  plugins: [],
 };

@@ -2,6 +2,8 @@
   @apply leading-7;
 }
 
+
+
 .post code {
   @apply rounded-sm bg-neutral-800 px-1 py-[2px] text-orange-500;
 }
