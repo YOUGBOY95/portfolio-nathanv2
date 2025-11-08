@@ -13,13 +13,13 @@ type Presentation = {
 
 const presentation: Presentation = {
   mail: "nathan.pinard95@gmail.com",
-  title: "Bonjour, je suis Nathan PINARD 👋 !",
+  title: "Hello ! I’m Nathan PINARD",
   profile: "/profile.avif",
   description:
     "",
   socials: [
     {
-      label: "Mon CV",
+      label: "Resume",
       link: "/cv_PINARD_NATHAN.pdf",
     },
     {

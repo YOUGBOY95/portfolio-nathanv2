@@ -41,17 +41,20 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         </h1>
         <p>
           <span>
-            Je suis un <span class="text-blue-300">développeur fullstack français</span> âgé de <span class="text-blue-300">22 ans</span> basé en <span class="text-blue-300">région parisienne</span>.
-          </span>
+        I’m a <span class="text-orange-300">French Full-Stack Developer & UX/UI Designer</span> based in the 
+        <span class="text-orange-300">Paris area</span>.
+      </span>
+      <span class="block my-2">
+        I have over <span class="text-orange-300">2 years</span> of experience building modern web applications.
+      </span>
+
+
           <span class="block my-2">
-            J'ai actuellement plus de <span class="text-blue-300">2 ans</span> d'expérience dans la création d'applications web.
-          </span>
-          <span class="block my-2">
-            Actuellement, je me spécialise dans l'utilisation de 
+            Currently, I specialize in using
             <span class="inline-flex w-fit items-center gap-2 rounded-md border border-neutral-800 bg-neutral-900 px-2 py-1 text-xs">
               <img src="/react.svg" alt="React Logo" class="w-4 h-4" />
               React.js 
-           </span> et <span class="inline-flex w-fit items-center gap-2 rounded-md border border-neutral-800 bg-neutral-900 px-2 py-1 text-xs">
+           </span> and <span class="inline-flex w-fit items-center gap-2 rounded-md border border-neutral-800 bg-neutral-900 px-2 py-1 text-xs">
             <img src="/nodejs.svg" alt="Node.js Logo" class="w-4 h-4" />
             Node.js .
           </span>
@@ -62,7 +65,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <p class="text-lg text-neutral-100">🌟​ - Mes skills</p>
+        <p class="text-lg text-neutral-100">🌟​ - My skills</p>
       </header>
       
       {posts.length === 0 && <p></p>}
@@ -176,9 +179,9 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       
       <header class="flex w-full flex-row justify-between gap-2">
         <p class="text-lg text-neutral-100">
-          💻 - Projets sélectionnés ({projects.length})
+          💻 - Selected Projects ({projects.length})
         </p>
-        <Link href="/projets" label="Voir plus" isUnderline target="_self" />
+        <Link href="/projets" label="More" isUnderline target="_self" />
       </header>
       {projects.length === 0 && <p></p>}
 
@@ -192,16 +195,16 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <p class="text-lg text-neutral-100">📩 - Prendre contact</p>
+        <p class="text-lg text-neutral-100">📩 - Get in Touch</p>
       </header>
       <p>
-        Envoyez-moi un email à l'adresse suivante<Link
+        Send me an email at the following address : <Link
           href={`mailto:${presentation.mail}`}
           label={presentation.mail}
-        /> ou suivez-moi via mes réseaux sociaux.
+        />, or connect with me on social media.
       </p>
       <SocialLinks />
     </article>
   </main>
-  <p>©2024 Copyright : Nathan PINARD</p>
+  <p>©2025 Copyright : Nathan PINARD</p>
 </Layout>

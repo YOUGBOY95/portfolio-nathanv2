@@ -27,7 +27,7 @@ const projects: Project[] = [
   },
 
   {
-    title: "🌐​ | MON PORTFOLIO V1",
+    title: "🌐​ | MY PORTFOLIO V1",
     techs: ["React.js", "Typescript","Sass"],
     link: "https://portfolio-nathan-bfgy1pz0e-yougboy95s-projects.vercel.app/",
   },
