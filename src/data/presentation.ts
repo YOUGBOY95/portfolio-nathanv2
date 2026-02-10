@@ -30,10 +30,6 @@ const presentation: Presentation = {
       label: "Github",
       link: "https://github.com/YOUGBOY95",
     },
-    {
-      label: "Bento",
-      link: "https://bento.me/nathan-pinard",
-    },
   ],
 };
 

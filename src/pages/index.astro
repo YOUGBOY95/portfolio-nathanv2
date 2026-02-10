@@ -44,17 +44,12 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         I’m a <span class="text-orange-500">French Full-Stack Developer & UX/UI Designer</span> based in the 
         <span class="text-orange-500">Paris area</span>.
       </span>
-      <span class="block my-2">
-        I have over <span class="text-orange-500">2 years</span> of experience building modern web applications.
-      </span>
-
-
           <span class="block my-2">
             Currently, I specialize in using
             <span class="inline-flex w-fit items-center gap-2 rounded-md border border-neutral-800 bg-neutral-900 px-2 py-1 text-xs">
               <img src="/react.svg" alt="React Logo" class="w-4 h-4" />
               React.js 
-           </span> and <span class="inline-flex w-fit items-center gap-2 rounded-md border border-neutral-800 bg-neutral-900 px-2 py-1 text-xs">
+           </span> <span class="text-orange-500">and</span> <span class="inline-flex w-fit items-center gap-2 rounded-md border border-neutral-800 bg-neutral-900 px-2 py-1 text-xs">
             <img src="/nodejs.svg" alt="Node.js Logo" class="w-4 h-4" />
             Node.js .
           </span>
@@ -65,7 +60,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <p class="text-lg text-neutral-100">🌟​ - My skills</p>
+        <p class="text-lg text-neutral-100">My skills</p>
       </header>
       
       {posts.length === 0 && <p></p>}
@@ -155,13 +150,13 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
           
           <div class="group flex max-w-sm flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
-              <img src="/photoshop.svg" alt="photoshop Logo" class="w-8 h-8">
+              <img src="/Firebase.svg" alt="Firebase Logo" class="w-8 h-8">
             </div>
           </div>
           
           <div class="group flex max-w-sm flex-col gap-1 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
             <div class="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:items-center">
-              <img src="/adobe.svg" alt="adobe Logo" class="w-8 h-8">
+              <img src="/nginx.svg" alt="nginx Logo" class="w-8 h-8">
             </div>
           </div>
           
@@ -179,7 +174,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       
       <header class="flex w-full flex-row justify-between gap-2">
         <p class="text-lg text-neutral-100">
-          💻 - Selected Projects ({projects.length})
+          Selected Projects ({projects.length})
         </p>
         <Link href="/projets" label="More" isUnderline target="_self" />
       </header>
@@ -195,7 +190,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <p class="text-lg text-neutral-100">📩 - Get in Touch</p>
+        <p class="text-lg text-neutral-100">Get in Touch</p>
       </header>
       <p>
         Send me an email at the following address : <Link
@@ -206,5 +201,5 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       <SocialLinks />
     </article>
   </main>
-  <p>©2025 Copyright : Nathan PINARD</p>
+  <p>©2026 Copyright : Nathan PINARD</p>
 </Layout>
