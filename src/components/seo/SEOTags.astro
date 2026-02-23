@@ -1,6 +1,7 @@
 ---
 import { SEO } from "astro-seo";
 import { AstroFont } from "astro-font";
+import Analytics from "@vercel/analytics/astro";
 import { SITE_URL } from "@/data/config";
 import type { HeadTags } from "@/utils/types/HeadTags";
 
@@ -74,4 +75,5 @@ const openGraph = {
       },
     ]}
   />
+  <Analytics />
 </head>
